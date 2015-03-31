@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="../../resources/library/jquery-2.1.3.min.js"></script>
+	<script src="../../resources/library/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+	<script src="../js/register.js"></script>
+	<link rel="stylesheet" href="../../resources/library/bootstrap-3.3.4-dist/css/bootstrap.min.css" media="all"/>
+
+	<link rel="stylesheet" href="../css/register.css" media="all" />
+	
+	<?php
+		require_once("../../resources/config.php");
+	?>
+</head>
+<body>
+<div class="kt-img-background vertical-center">
+	<div class="container">
+	<div class="row title-txt">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">Kingston Car Share</div>
+			
+		</div>
+	<form>
+	  <div class="row">
+	  	<div class="col-xs-2"></div>
+	  	  <div class="col-xs-8">
+			  <div class="form-group">
+			   
+			    <input type="text" class="form-control" id="inputName" placeholder="Name">
+			  </div>
+		  </div>
+		  
+	  </div>
+
+	  <div class="row">
+	  	<div class="col-xs-2"></div>
+	  	  <div class="col-xs-2">
+		  <div class="form-group">
+		   
+		    <input type="text" class="form-control" id="inputStreetNumber" placeholder="Street Number">
+		  </div>
+		  </div>
+		  <div class="col-xs-4">
+			  <div class="form-group">
+			    
+			    <input type="text" class="form-control" id="inputStreetName" placeholder="Street Name">
+			  </div>
+		  </div>
+		  <div class="col-xs-2">
+		  <div class="form-group">
+		   
+		    <input type="text" class="form-control" id="inputApartmentNumber" placeholder="Apartment Number">
+		  </div>
+		  </div>
+	  </div>
+
+	  <div class="row">
+	  	<div class="col-xs-2"></div>
+	  	<div class="col-xs-3">
+		  <div class="form-group">
+		   
+		    <input type="text" class="form-control" id="inputCity" placeholder="City">
+		  </div>
+		</div>
+		<div class="col-xs-3">
+		  <div class="form-group">
+		    
+		    <input type="text" class="form-control" id="inputProvince" placeholder="Province">
+		  </div>
+		</div>
+		<div class="col-xs-2">
+		  <div class="form-group">
+		    
+		    <input type="text" class="form-control" id="inputPostalCode" placeholder="Postal Code">
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="row">
+	  	<div class="col-xs-2"></div>
+	  	<div class="col-xs-4">
+
+		  <div class="form-group">
+		   
+		    <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+		  </div>
+		</div>
+		<div class="col-xs-4">
+			<div class="form-group">
+			   
+			    <input type="text" class="form-control" id="inputPhoneNumber" placeholder="Phone Number">
+		  	</div>
+		</div>
+	  </div>
+
+	  <div class="row">
+	  	<div class="col-xs-2"></div>
+		  <div class="col-xs-8">
+			  <div class="form-group">
+			    
+			    <input type="text" class="form-control" id="inputDriversLicense" placeholder="Driver's License">
+			  </div>
+		  </div>
+	  </div>
+	  <div class="row">
+	  <div class="col-xs-2"></div>
+	  	   <div class="col-xs-5">
+			   <div class="form-group">
+			   
+			    <input type="text" class="form-control" id="inputCreditCardNumber" placeholder="Credit Card Number">
+			  </div>
+			</div>
+			<div class="col-xs-3">
+			  <div class="form-group">
+		            <div class='input-group date' id='expirydatetimepicker'>
+		           
+		                <input type='text' class="form-control" id="inputCreditCardExpiryDate" placeholder="Expiry Date" />
+		                <span class="input-group-addon">
+		                    <span class="glyphicon glyphicon-calendar">
+		                    </span>
+		                </span>
+		            </div>
+		       </div>
+		    </div>
+       </div>
+       <div class="row">
+       		<div class="col-xs-2"></div>
+       		<div class="col-xs-4">
+		       
+					  <div class="form-group">
+					    
+					    <input type="text" class="form-control" id="inputUserName" placeholder="Username">
+					  </div>
+				  </div>
+				  <div class="col-xs-4">
+		        <div class="form-group">
+				   
+				    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+			  	</div>
+			</div>
+	  	</div>
+
+	  	
+	  <div class="row">
+	  	<div class="col-xs-9"></div>
+	  	<button type="button" class="btn btn-default" id="submit-btn">Submit</button>
+	  </div>
+	</form>
+	</div>
+	
+</div>
+</body>
+</html>

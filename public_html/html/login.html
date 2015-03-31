@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="../../resources/library/jquery-2.1.3.min.js"></script>
+	<script src="../../resources/library/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+	<script src="../js/login.js"></script>
+	<link rel="stylesheet" href="../../resources/library/bootstrap-3.3.4-dist/css/bootstrap.min.css" media="all"/>
+	<link rel="stylesheet" href="../css/login.css" media="all" />
+	
+	<?php
+		require_once("../../resources/config.php");
+	?>
+</head>
+<body>
+<div class="kt-img-background vertical-center">
+	<div class="container login-container">
+
+		<div class="row title-txt">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">Kingston Car Share</div>
+			
+		</div>
+		<div class="row translucent">
+			<div class="col-md-4"></div>
+			<div class="input-group col-md-4">
+				<input type="text" id="username-input" class="form-control input-lg" placeholder = "Username">
+			</div>
+		</div>
+		<div class="row translucent ">
+			<div class="col-md-4"></div>
+			<div class="input-group col-md-4">
+				<input type="password" id="password-input" class="form-control input-lg" placeholder = "Password">
+			</div>
+		</div>
+
+		<div class="row translucent ">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<button type="button" id="login-btn" class="btn btn-default center-block login-btn">Log In</button>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
