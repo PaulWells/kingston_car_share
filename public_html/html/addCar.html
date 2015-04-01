@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
-<header>
+<head>
 	<script src="../../resources/library/jquery-2.1.3.min.js"></script>
 	<script src="../../resources/library/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
-	<script src="../js/adminHomePage.js"></script>
-	<script src="../js/loadHeader.js"></script>
+	<script src="../js/addCar.js"></script>
 	<link rel="stylesheet" href="../../resources/library/bootstrap-3.3.4-dist/css/bootstrap.min.css" media="all"/>
+	<script src="../js/loadHeader.js"></script>
 	<link rel="stylesheet" href="../css/header.css" media="all" />
-</header>
+	<link rel="stylesheet" href="../css/addCar.css" media="all" />
+</head>
 <body>
 <div id="header"></div>
-<button type="button" id="addCarButton">Add Car</button>
-<button type="button" id="commentsButton">View Comments</button>
-<button type="button" id="anniversariesButton">View Anniversaries</button>
-<button type="button" id="locationsButton">View Locations</button>
-
+	<input type="text" placeholder="Make" id="makeInput">
+	<input type="text" placeholder="Model" id="modelInput">
+	<input type="text" placeholder="Year" id="yearInput">
+	<button type="button" id="addCarButton">Add Car</button>
 </body>
-
 </html>

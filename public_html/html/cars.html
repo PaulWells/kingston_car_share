@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="../../resources/library/jquery-2.1.3.min.js"></script>
+	<script src="../../resources/library/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+	<script src="../../resources/library/bootstrap-table.js"></script>
+	<script src="../js/cars.js"></script>
+	<script src="../js/loadHeader.js"></script>
+	<link rel="stylesheet" href="../../resources/library/bootstrap-3.3.4-dist/css/bootstrap.min.css" media="all"/>
+	<link rel="stylesheet" href="../css/cars.css" media="all" />
+	<link rel="stylesheet" href="../../resources/library/bootstrap-table.css" media="all"/>
+	<link rel="stylesheet" href="../css/header.css" media="all" />
+	
+</head>
+<body>
+<div id="header"></div>
+	<table id="carsTable">
+	    <thead>
+	    <tr>
+	        <th data-field="VIN">VIN</th>
+	        <th data-field="make">Make</th>
+	        <th data-field="model">Model</th>
+	        <th data-field="year">Year</th>
+	        <th data-field="current_status">Current Status</th>
+	        <th data-field="last_odometer_reading">Last Odometer</th>
+	        <th data-field="last_gas_tank_reading">Last Gas Tank</th>
+	        <th data-field="date_last_maintenance">Last Maintenance</th>
+	        <th data-field="odometer_last_maintenance">Odometer Last Maintenance</th>
+	    </tr>
+	    </thead>
+	</table>
+
+	<input type="text" placeholder="VIN" id="carInput">
+	<button type="button" id="carButton">Choose</button>
+	<input type="text" placeholder="startDate" id="startInput">
+	<input type="text" placeholder="endDate" id="endInput">
+	<button type="button" id="queryButton">Query</button>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="../../resources/library/jquery-2.1.3.min.js"></script>
+	<script src="../../resources/library/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+	<script src="../../resources/library/bootstrap-table.js"></script>
+	<script src="../js/rentalHistory.js"></script>
+	<script src="../js/loadHeader.js"></script>
+	<link rel="stylesheet" href="../../resources/library/bootstrap-3.3.4-dist/css/bootstrap.min.css" media="all"/>
+	<link rel="stylesheet" href="../css/rentalHistory.css" media="all" />
+	<link rel="stylesheet" href="../../resources/library/bootstrap-table.css" media="all"/>
+	<link rel="stylesheet" href="../css/header.css" media="all" />
+	
+</head>
+<body>
+<div id="header"></div>
+	<table id="rentalHistoryTable">
+	    <thead>
+	    <tr>
+	        <th data-field="VIN">Vehicle</th>
+	        <th data-field="L_ID">Location</th>
+	        <th data-field="date">Date</th>
+	        <th data-field="pickup">Pick Up</th>
+	        <th data-field="dropoff">Drop Off</th>
+	    </tr>
+	    </thead>
+	</table>
+
+	<input type="text" placeholder="VIN" id="vehicleInput">
+	<textarea rows="4" id="commentTextArea" placeholder="Leave a comment"></textarea>
+	<button type="button" id="commentButton">Submit</button>
+</body>
+</html>

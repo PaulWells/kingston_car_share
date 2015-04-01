@@ -13,6 +13,7 @@ function adminLogin(input){
 		data: input,
 		dataType: 'json',
 		success: function(data) {
+			alert("success admin log in");
 			if(data.length >0){
 				// Successful admin login
 				navigateToAdminHomePage();
@@ -23,7 +24,7 @@ function adminLogin(input){
 		error: function (error) {
 			debugger;
 		}
-	})
+	});
 }
 
 function login() {
@@ -43,6 +44,7 @@ function login() {
 				navigateToHomePage();
 			}else{
 				// Check if credentials belong to admin
+				alert("Try Admin Log In");
 				adminLogin(input);
 			}
 

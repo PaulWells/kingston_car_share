@@ -34,3 +34,11 @@ html {
 	width: 100%;
 	height:100%;
 }
+
+#reservationTable {
+	margin-top: 50px;
+}
+
+#commentTextArea {
+	margin-top: 50px;
+}

@@ -9,13 +9,8 @@
 		echo "Failed to connect to MySQL: " . mysqli_connect_error();
 	}
 
-	$username = $_POST['username'];
-	$password = $_POST['password'];
-
-	$query = "SELECT * 
-	FROM MEMBER
-	WHERE username='$username' AND password='$password';";
-
+	$query = "SELECT MAX(VIN)
+	FROM Car;";
 	$result = mysqli_query($cxn, $query) or trigger_error(mysql_error()." ".$query);
 	$data = [];
 	$i = 0;
@@ -23,8 +18,16 @@
 		$data[$i] = $row;
 		$i = $i + 1;
 	}
-	if($i > 0){
-		$_SESSION["mid"] = $data[0]['M_ID'];
-	}
-	echo json_encode($data);
+	//echo json_encode($data);
+	$vin = intval($data[0]['MAX(VIN)']) + 1;
+	$make = $_POST['make'];
+	$model = $_POST['model'];
+	$year = $_POST['year'];
+
+	$query = "INSERT INTO Car(VIN, make, model, year)
+	VALUES($vin, '$make', '$model', $year);";
+
+	$result = mysqli_query($cxn, $query) or trigger_error(mysql_error()." ".$query);
+
+	echo json_encode($result);
 ?>
