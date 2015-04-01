@@ -30,7 +30,13 @@ function setLocationInSession(lid){
 		data: input,
 		dataType: 'json',
 		success: function(data) {
-			document.location.href = "cars.html";
+			var parm = location.search;
+			if(parm === "?mode=admin"){
+				document.location.href = "adminCars.html";
+			}else{
+				document.location.href = "cars.html";
+			}
+			
 		},
 		error: function (error) {
 			debugger;

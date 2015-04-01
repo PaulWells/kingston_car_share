@@ -8,13 +8,13 @@ window.addEventListener("load", function(){
 		document.location.href="addCar.html";
 	});
 	commentsButton.addEventListener("click", function(){
-		
+		document.location.href="comments.html";
 	});
 	anniversariesButton.addEventListener("click", function(){
 		document.location.href="anniversaries.html";
 	});
 	locationsButton.addEventListener("click", function(){
-		
+		document.location.href="locations.html?mode=admin";
 	});
 	
 });

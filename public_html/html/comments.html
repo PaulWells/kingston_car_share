@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="../../resources/library/jquery-2.1.3.min.js"></script>
+	<script src="../../resources/library/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+	<script src="../../resources/library/bootstrap-table.js"></script>
+	<script src="../js/comments.js"></script>
+	<script src="../js/loadHeader.js"></script>
+	<link rel="stylesheet" href="../../resources/library/bootstrap-3.3.4-dist/css/bootstrap.min.css" media="all"/>
+	<link rel="stylesheet" href="../css/comments.css" media="all" />
+	<link rel="stylesheet" href="../../resources/library/bootstrap-table.css" media="all"/>
+	<link rel="stylesheet" href="../css/header.css" media="all" />
+	
+</head>
+<body>
+<div id="header"></div>
+	<table id="commentsTable">
+	    <thead>
+	    <tr>
+	        <th data-field="C_ID">Comment ID</th>
+	        <th data-field="M_ID">Member ID</th>
+	        <th data-field="VIN">VIN</th>
+	        <th data-field="comment">Comment</th>
+	        <th data-field="time">Time</th>
+	    </tr>
+	    </thead>
+	</table>
+
+	<textarea rows="4" id="responseTextArea" placeholder="Respond"></textarea>
+	<input type="text" placeholder="Comment ID" id="cidInput">
+	<button type="button" id="respondButton">Submit</button>
+	<button type="button" id="ascButton">ASC</button>
+	<button type="button" id="descButton">DESC</button>
+</body>
+</html>
